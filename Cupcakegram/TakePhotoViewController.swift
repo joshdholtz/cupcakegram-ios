@@ -44,7 +44,7 @@ class TakePhotoViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = UIColor.orange
+		view.backgroundColor = Colors.sprinkleBlue
 		
 		setupUI()
 		subscribeUI()
@@ -53,7 +53,13 @@ class TakePhotoViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
+		title = "Step 1: Take & Crop"
 		image.value = nil
+	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		title = ""
+		super.viewWillDisappear(animated)
 	}
 	
 	private func setupUI() {
@@ -65,9 +71,9 @@ class TakePhotoViewController: UIViewController {
 		
 		// Crop scroll view
 		cropScrollView.videoRenderSize = CGSize(width: 1000, height: 1000)
-		cropScrollView.backgroundColor = UIColor.blue
+		cropScrollView.backgroundColor = Colors.lightGray
 		constrain(cropScrollView, view) { (view, parent) in
-			view.top == parent.top + 64 // This is bad... why why why
+			view.top == parent.top
 			view.left == parent.left
 			view.right == parent.right
 			view.height == view.width
@@ -75,8 +81,10 @@ class TakePhotoViewController: UIViewController {
 		
 		// Take photo button
 		btnTakePhoto.setTitle("Take Photo", for: .normal)
+		btnTakePhoto.backgroundColor = Colors.wrapperTeal
+		btnTakePhoto.titleLabel?.font = UIFont.systemFont(ofSize: 13)
 		constrain(btnTakePhoto, cropScrollView, view) { (view, top, parent) in
-			view.top == top.bottom + 10
+			view.top == top.bottom
 			view.left == parent.left
 			view.right == parent.centerX
 			view.height == 40
@@ -84,8 +92,10 @@ class TakePhotoViewController: UIViewController {
 		
 		// Photo roll button
 		btnPhotoRoll.setTitle("Photo Roll", for: .normal)
+		btnPhotoRoll.backgroundColor = Colors.frostingPink
+		btnPhotoRoll.titleLabel?.font = UIFont.systemFont(ofSize: 13)
 		constrain(btnPhotoRoll, cropScrollView, view) { (view, top, parent) in
-			view.top == top.bottom + 10
+			view.top == top.bottom
 			view.left == parent.centerX
 			view.right == parent.right
 			view.height == 40
@@ -94,8 +104,10 @@ class TakePhotoViewController: UIViewController {
 		// Next button
 		btnNext.isHidden = true
 		btnNext.setTitle("Next", for: .normal)
+		btnNext.backgroundColor = Colors.sprinkleGreen
+		btnNext.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
 		constrain(btnNext, btnTakePhoto, view) { (view, top, parent) in
-			view.top == top.bottom + 10
+			view.top == top.bottom
 			view.left == parent.left
 			view.right == parent.right
 			view.height == 40

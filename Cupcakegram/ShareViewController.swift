@@ -39,7 +39,10 @@ class ShareViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = UIColor.orange
+		
+		title = "Step 3: Share & Save"
+		
+		view.backgroundColor = Colors.sprinkleBlue
 		
 		setupUI()
 		subscribeUI()
@@ -62,7 +65,7 @@ class ShareViewController: UIViewController {
 		imageView.isUserInteractionEnabled = true
 		imageView.clipsToBounds = true
 		constrain(imageView, view) { (view, parent) in
-			view.top == parent.top + 64 // This is bad... why why why
+			view.top == parent.top
 			view.left == parent.left
 			view.right == parent.right
 			view.height == view.width
@@ -70,6 +73,8 @@ class ShareViewController: UIViewController {
 		
 		// Share button
 		btnShare.setTitle("Share", for: .normal)
+		btnShare.backgroundColor = Colors.wrapperTeal
+		btnShare.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
 		constrain(btnShare, imageView, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.left
@@ -79,6 +84,8 @@ class ShareViewController: UIViewController {
 		
 		// Save button
 		btnSave.setTitle("Save", for: .normal)
+		btnSave.backgroundColor = Colors.frostingPink
+		btnSave.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
 		constrain(btnSave, imageView, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.centerX
@@ -88,6 +95,8 @@ class ShareViewController: UIViewController {
 		
 		// Start over button
 		btnStartOver.setTitle("Start Over?", for: .normal)
+		btnStartOver.backgroundColor = Colors.sprinkleGreen
+		btnStartOver.titleLabel?.font = UIFont.systemFont(ofSize: 13)
 		constrain(btnStartOver, btnShare, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.left
@@ -122,7 +131,7 @@ class ShareViewController: UIViewController {
 		
 		btnStartOver.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] () in
 			guard let strongSelf = self else { return }
-			strongSelf.navigationController?.popToRootViewController(animated: true)
+			let _ = strongSelf.navigationController?.popToRootViewController(animated: true)
 		}).addDisposableTo(disposeBag)
 	}
 	

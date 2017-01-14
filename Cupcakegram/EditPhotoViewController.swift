@@ -16,7 +16,7 @@ import RxCocoa
 class EditPhotoViewController: UIViewController {
 	
 	fileprivate let overlayImages = [
-		#imageLiteral(resourceName: "trex"), #imageLiteral(resourceName: "longneck")
+		#imageLiteral(resourceName: "elizabeths_cupcake")
 	]
 	
 	fileprivate let imageView = UIImageView()
@@ -47,11 +47,21 @@ class EditPhotoViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = UIColor.orange
+		view.backgroundColor = Colors.sprinkleBlue
 		
 		setupUI()
 		subscribeUI()
 		subscribeVariables()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		title = "Step 2: Add Cupcakes"
+	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		title = ""
+		super.viewWillDisappear(animated)
 	}
 	
 	private func setupUI() {
@@ -64,7 +74,7 @@ class EditPhotoViewController: UIViewController {
 		imageView.isUserInteractionEnabled = true
 		imageView.clipsToBounds = true
 		constrain(imageView, view) { (view, parent) in
-			view.top == parent.top + 64 // This is bad... why why why
+			view.top == parent.top
 			view.left == parent.left
 			view.right == parent.right
 			view.height == view.width
@@ -72,6 +82,7 @@ class EditPhotoViewController: UIViewController {
 		
 		// Collection view
 		OverlayCell.register(withCollectionView: collectionView)
+		collectionView.backgroundColor = UIColor(white: 1.0, alpha: 0.3)
 		collectionView.dataSource = self
 		collectionView.delegate = self
 		collectionView.allowsSelection = true
@@ -85,6 +96,8 @@ class EditPhotoViewController: UIViewController {
 		
 		// Next button
 		btnNext.setTitle("Next", for: .normal)
+		btnNext.backgroundColor = Colors.sprinkleGreen
+		btnNext.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
 		constrain(btnNext, collectionView, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.left
@@ -202,10 +215,13 @@ private class OverlayCell: BaseCollectionViewCell {
 		contentView.addSubview(imageView)
 		
 		// Image
+		imageView.backgroundColor = UIColor.white
 		imageView.contentMode = .scaleAspectFit
+		imageView.layer.masksToBounds = true
+		imageView.layer.cornerRadius = 2.0
 		constrain(imageView, contentView) { (view, parent) in
-			view.edges == parent.edges
-			view.width == 100
+			view.edges == inset(parent.edges, 5)
+			view.width == 90
 			view.height == view.width
 		}
 		
