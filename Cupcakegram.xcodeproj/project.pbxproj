@@ -21,6 +21,7 @@
 		03A6D28D1E29B15D00F89652 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D28C1E29B15D00F89652 /* BaseCollectionViewCell.swift */; };
 		03A6D2901E29BC0400F89652 /* UIImage+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D28F1E29BC0400F89652 /* UIImage+Rotation.m */; };
 		03A6D2921E29BD1F00F89652 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2911E29BD1F00F89652 /* ShareViewController.swift */; };
+		03A6D2941E29D83200F89652 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2931E29D83200F89652 /* BaseNavigationController.swift */; };
 		3FAC77AEF7A064278F1B8B53 /* Pods_Cupcakegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695B93DF3AF5EE139DFBDEB0 /* Pods_Cupcakegram.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		03A6D28E1E29BBF000F89652 /* UIImage+Rotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotation.h"; sourceTree = "<group>"; };
 		03A6D28F1E29BC0400F89652 /* UIImage+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotation.m"; sourceTree = "<group>"; };
 		03A6D2911E29BD1F00F89652 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		03A6D2931E29D83200F89652 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		3D013D186C39C92B5148242B /* Pods-Cupcakegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupcakegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cupcakegram/Pods-Cupcakegram.release.xcconfig"; sourceTree = "<group>"; };
 		695B93DF3AF5EE139DFBDEB0 /* Pods_Cupcakegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupcakegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A6EDB10EC88026B39BAEC /* Pods-Cupcakegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupcakegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cupcakegram/Pods-Cupcakegram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				03A6D28C1E29B15D00F89652 /* BaseCollectionViewCell.swift */,
+				03A6D2931E29D83200F89652 /* BaseNavigationController.swift */,
 			);
 			name = Bases;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A6D2941E29D83200F89652 /* BaseNavigationController.swift in Sources */,
 				03A6D2901E29BC0400F89652 /* UIImage+Rotation.m in Sources */,
 				03A6D27B1E299B1900F89652 /* Crop.swift in Sources */,
 				03A6D2651E2995F900F89652 /* AppDelegate.swift in Sources */,

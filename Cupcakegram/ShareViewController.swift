@@ -75,6 +75,8 @@ class ShareViewController: UIViewController {
 		btnShare.setTitle("Share", for: .normal)
 		btnShare.backgroundColor = Colors.wrapperTeal
 		btnShare.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+		btnShare.setTitleColor(UIColor.white, for: .normal)
+		btnShare.setTitleColor(UIColor.lightText, for: .highlighted)
 		constrain(btnShare, imageView, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.left
@@ -86,6 +88,8 @@ class ShareViewController: UIViewController {
 		btnSave.setTitle("Save", for: .normal)
 		btnSave.backgroundColor = Colors.frostingPink
 		btnSave.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+		btnSave.setTitleColor(UIColor.white, for: .normal)
+		btnSave.setTitleColor(UIColor.lightText, for: .highlighted)
 		constrain(btnSave, imageView, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.centerX
@@ -97,6 +101,8 @@ class ShareViewController: UIViewController {
 		btnStartOver.setTitle("Start Over?", for: .normal)
 		btnStartOver.backgroundColor = Colors.sprinkleGreen
 		btnStartOver.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+		btnStartOver.setTitleColor(UIColor.white, for: .normal)
+		btnStartOver.setTitleColor(UIColor.lightText, for: .highlighted)
 		constrain(btnStartOver, btnShare, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.left

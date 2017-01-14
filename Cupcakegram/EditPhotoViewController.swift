@@ -98,6 +98,8 @@ class EditPhotoViewController: UIViewController {
 		btnNext.setTitle("Next", for: .normal)
 		btnNext.backgroundColor = Colors.sprinkleGreen
 		btnNext.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+		btnNext.setTitleColor(UIColor.white, for: .normal)
+		btnNext.setTitleColor(UIColor.lightText, for: .highlighted)
 		constrain(btnNext, collectionView, view) { (view, top, parent) in
 			view.top == top.bottom
 			view.left == parent.left

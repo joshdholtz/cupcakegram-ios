@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		guard let window = window else { return }
 		
 		let viewController = TakePhotoViewController()
-		let rootViewController = UINavigationController(rootViewController: viewController)
+		let rootViewController = BaseNavigationController(rootViewController: viewController)
 		rootViewController.navigationBar.isTranslucent = false
 		
 		UINavigationBar.appearance().barTintColor = Colors.cherryRed
