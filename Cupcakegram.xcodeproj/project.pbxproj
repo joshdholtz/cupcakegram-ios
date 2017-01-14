@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		03A6D2651E2995F900F89652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2641E2995F900F89652 /* AppDelegate.swift */; };
-		03A6D2671E2995F900F89652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2661E2995F900F89652 /* ViewController.swift */; };
-		03A6D26A1E2995F900F89652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A6D2681E2995F900F89652 /* Main.storyboard */; };
 		03A6D26C1E2995F900F89652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A6D26B1E2995F900F89652 /* Assets.xcassets */; };
 		03A6D26F1E2995F900F89652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A6D26D1E2995F900F89652 /* LaunchScreen.storyboard */; };
+		03A6D2771E29981200F89652 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2761E29981200F89652 /* TakePhotoViewController.swift */; };
+		03A6D27B1E299B1900F89652 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D27A1E299B1900F89652 /* Crop.swift */; };
+		03A6D2801E29A03500F89652 /* ImagePickerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D27D1E29A03500F89652 /* ImagePickerExtensions.swift */; };
+		03A6D2811E29A03500F89652 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D27E1E29A03500F89652 /* UIImageExtensions.swift */; };
+		03A6D2821E29A03500F89652 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D27F1E29A03500F89652 /* UIViewExtensions.swift */; };
+		03A6D2841E29A77300F89652 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2831E29A77300F89652 /* OptionalExtensions.swift */; };
+		03A6D2861E29ABE000F89652 /* EditPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A6D2851E29ABE000F89652 /* EditPhotoViewController.swift */; };
+		3FAC77AEF7A064278F1B8B53 /* Pods_Cupcakegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695B93DF3AF5EE139DFBDEB0 /* Pods_Cupcakegram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03A6D2611E2995F900F89652 /* Cupcakegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupcakegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A6D2641E2995F900F89652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03A6D2661E2995F900F89652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03A6D2691E2995F900F89652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03A6D26B1E2995F900F89652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03A6D26E1E2995F900F89652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03A6D2701E2995F900F89652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A6D2761E29981200F89652 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		03A6D27A1E299B1900F89652 /* Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		03A6D27D1E29A03500F89652 /* ImagePickerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerExtensions.swift; sourceTree = "<group>"; };
+		03A6D27E1E29A03500F89652 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		03A6D27F1E29A03500F89652 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		03A6D2831E29A77300F89652 /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
+		03A6D2851E29ABE000F89652 /* EditPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPhotoViewController.swift; sourceTree = "<group>"; };
+		3D013D186C39C92B5148242B /* Pods-Cupcakegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupcakegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cupcakegram/Pods-Cupcakegram.release.xcconfig"; sourceTree = "<group>"; };
+		695B93DF3AF5EE139DFBDEB0 /* Pods_Cupcakegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupcakegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63A6EDB10EC88026B39BAEC /* Pods-Cupcakegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupcakegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cupcakegram/Pods-Cupcakegram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAC77AEF7A064278F1B8B53 /* Pods_Cupcakegram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				03A6D2631E2995F900F89652 /* Cupcakegram */,
 				03A6D2621E2995F900F89652 /* Products */,
+				EDE6402725A1DC62BE47801C /* Pods */,
+				2FEBBC923CCCAD6AAC28A2A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,59 @@
 			isa = PBXGroup;
 			children = (
 				03A6D2641E2995F900F89652 /* AppDelegate.swift */,
-				03A6D2661E2995F900F89652 /* ViewController.swift */,
-				03A6D2681E2995F900F89652 /* Main.storyboard */,
+				03A6D27C1E29A02800F89652 /* Extensions */,
+				03A6D2791E299B0400F89652 /* Views */,
+				03A6D2781E299AF500F89652 /* ViewControllers */,
 				03A6D26B1E2995F900F89652 /* Assets.xcassets */,
 				03A6D26D1E2995F900F89652 /* LaunchScreen.storyboard */,
 				03A6D2701E2995F900F89652 /* Info.plist */,
 			);
 			path = Cupcakegram;
+			sourceTree = "<group>";
+		};
+		03A6D2781E299AF500F89652 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03A6D2761E29981200F89652 /* TakePhotoViewController.swift */,
+				03A6D2851E29ABE000F89652 /* EditPhotoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		03A6D2791E299B0400F89652 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03A6D27A1E299B1900F89652 /* Crop.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		03A6D27C1E29A02800F89652 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03A6D2831E29A77300F89652 /* OptionalExtensions.swift */,
+				03A6D27D1E29A03500F89652 /* ImagePickerExtensions.swift */,
+				03A6D27E1E29A03500F89652 /* UIImageExtensions.swift */,
+				03A6D27F1E29A03500F89652 /* UIViewExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2FEBBC923CCCAD6AAC28A2A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				695B93DF3AF5EE139DFBDEB0 /* Pods_Cupcakegram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE6402725A1DC62BE47801C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D63A6EDB10EC88026B39BAEC /* Pods-Cupcakegram.debug.xcconfig */,
+				3D013D186C39C92B5148242B /* Pods-Cupcakegram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A6D2731E2995F900F89652 /* Build configuration list for PBXNativeTarget "Cupcakegram" */;
 			buildPhases = (
+				B2C1CC5145FB01076031AE1E /* [CP] Check Pods Manifest.lock */,
 				03A6D25D1E2995F800F89652 /* Sources */,
 				03A6D25E1E2995F800F89652 /* Frameworks */,
 				03A6D25F1E2995F800F89652 /* Resources */,
+				A6D2704FA5231FEC5EBFFD78 /* [CP] Embed Pods Frameworks */,
+				27CC3FD49344A204C3B823EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +163,7 @@
 					03A6D2601E2995F800F89652 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WPBN76YKX2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,33 +193,78 @@
 			files = (
 				03A6D26F1E2995F900F89652 /* LaunchScreen.storyboard in Resources */,
 				03A6D26C1E2995F900F89652 /* Assets.xcassets in Resources */,
-				03A6D26A1E2995F900F89652 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27CC3FD49344A204C3B823EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cupcakegram/Pods-Cupcakegram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D2704FA5231FEC5EBFFD78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cupcakegram/Pods-Cupcakegram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C1CC5145FB01076031AE1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03A6D25D1E2995F800F89652 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A6D2671E2995F900F89652 /* ViewController.swift in Sources */,
+				03A6D27B1E299B1900F89652 /* Crop.swift in Sources */,
 				03A6D2651E2995F900F89652 /* AppDelegate.swift in Sources */,
+				03A6D2841E29A77300F89652 /* OptionalExtensions.swift in Sources */,
+				03A6D2811E29A03500F89652 /* UIImageExtensions.swift in Sources */,
+				03A6D2771E29981200F89652 /* TakePhotoViewController.swift in Sources */,
+				03A6D2821E29A03500F89652 /* UIViewExtensions.swift in Sources */,
+				03A6D2801E29A03500F89652 /* ImagePickerExtensions.swift in Sources */,
+				03A6D2861E29ABE000F89652 /* EditPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03A6D2681E2995F900F89652 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03A6D2691E2995F900F89652 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03A6D26D1E2995F900F89652 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,6 +371,7 @@
 		};
 		03A6D2741E2995F900F89652 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63A6EDB10EC88026B39BAEC /* Pods-Cupcakegram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WPBN76YKX2;
@@ -272,6 +385,7 @@
 		};
 		03A6D2751E2995F900F89652 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D013D186C39C92B5148242B /* Pods-Cupcakegram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WPBN76YKX2;
@@ -302,6 +416,7 @@
 				03A6D2751E2995F900F89652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

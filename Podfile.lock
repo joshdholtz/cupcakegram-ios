@@ -1,0 +1,22 @@
+PODS:
+  - Cartography (1.0.1)
+  - PKHUD (4.1.0)
+  - RxCocoa (3.1.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.1.0)
+
+DEPENDENCIES:
+  - Cartography (~> 1.0.1)
+  - PKHUD (~> 4.1.0)
+  - RxCocoa (~> 3.1.0)
+  - RxSwift (~> 3.1.0)
+
+SPEC CHECKSUMS:
+  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
+  PKHUD: a0ecdee9f67d9b462c0c5e4ba38400292ea6ae6e
+  RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
+  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
+
+PODFILE CHECKSUM: e09e890a3a6c028660a4eadfca0a75cc3a65d92f
+
+COCOAPODS: 1.1.1
