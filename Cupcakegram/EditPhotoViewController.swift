@@ -9,6 +9,7 @@
 import UIKit
 
 import Cartography
+import PKHUD
 import RxSwift
 import RxCocoa
 
@@ -94,15 +95,26 @@ class EditPhotoViewController: UIViewController {
 	
 	private func subscribeUI() {
 		btnNext.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] () in
-			guard let strongSelf = self else { return }
 			
-			guard let mergedImage = OverlayView.mergeImages(strongSelf.overlays, image: strongSelf.image.value, imgStill: strongSelf.imageView) else {
-				return
+			HUD.show(.labeledProgress(title: "Creating 8-D", subtitle: nil))
+			background { [weak self] in
+				guard let strongSelf = self else { return }
+				guard let mergedImage = OverlayView.mergeImages(strongSelf.overlays, image: strongSelf.image.value, imgStill: strongSelf.imageView) else {
+					
+					main {
+						HUD.flash(.labeledError(title: "Couldn't create :(", subtitle: nil))
+					}
+					
+					return
+				}
+				
+				main { [weak self] in
+					HUD.hide()
+					guard let strongSelf = self else { return }
+					let viewController = ShareViewController(image: mergedImage)
+					strongSelf.navigationController?.pushViewController(viewController, animated: true)
+				}
 			}
-			
-			let viewController = ShareViewController(image: mergedImage)
-			strongSelf.navigationController?.pushViewController(viewController, animated: true)
-			
 		}).addDisposableTo(disposeBag)
 	}
 	

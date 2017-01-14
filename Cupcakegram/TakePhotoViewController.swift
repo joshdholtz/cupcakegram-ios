@@ -51,6 +51,11 @@ class TakePhotoViewController: UIViewController {
 		subscribeVariables()
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		image.value = nil
+	}
+	
 	private func setupUI() {
 		// Add views
 		view.addSubview(cropScrollView)
